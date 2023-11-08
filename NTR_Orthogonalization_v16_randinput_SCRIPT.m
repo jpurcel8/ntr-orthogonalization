@@ -7,7 +7,7 @@
 %% Set Parameters
 output_code='test'; % uncommment for SCRIPT
 numOfIterations = 1000;
-numOfWords =210;
+numOfWords =160;
 increment=50;
 
 output_path=pwd; % navigate to the program folder and uncenser this for running as SCRIPT
