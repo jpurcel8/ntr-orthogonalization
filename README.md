@@ -33,19 +33,22 @@ This approach ensures that the word lists generated are both short and minimally
 ### Setup
 
 1. Clone or download the repository to your local machine.
-2. Open MATLAB and set the working directory to the root folder of this project.
-3. Run the `main.m` script to access the primary functionality.
-4. Explore the `+OrthogonalizationLib` directory for detailed implementations of the library's functions.
+2. Open MATLAB and open the root folder of this project. Immediately to the left of the text showing the current path, select the icon with the folder and green arrow and navigate to the root folder `ntr-orthogonalization`.
+3. When running a script in this library for the first time, you may be asked by MATLAB to add the folder to the working path. When prompted, select "Add to Path."
 
 ## Usage
 
-The primary script to run the library's functionality is `main.m`. Executing this script will guide you through the process of creating an optimized word list for your fMRI block-based study.
+### `NTR_Orthogonalization_v16_listinput.m`
 
-For users looking to customize or extend the library's functionalities, the `+OrthogonalizationLib` directory contains the core MATLAB classes and methods. Each file within this directory is well-documented to provide clarity on its purpose, usage, inputs, and outputs.
+The primary script to run the library's functionality is `NTR_Orthogonalization_v16_listinput.m`. This script takes in a list of words and outputs distance matrices for those words. An example word list is provided in `data/wordinput_1.csv`.
 
-## Customization and Extensions
+If you want to use your own list of words, create a .csv file with each of the words in a different cell, in all lowercase, in a signle row. Replace `data/wordinput_1.csv` with this file, or edit the `NTR_Orthogonalization_v16_listinput.m` script to accomodate the name and location of your file in the line reading
 
-The library is designed with extensibility in mind. If you have specific requirements or datasets, the library's modular structure allows for easy adaptations and extensions. For guidance on customizing the library, refer to -.
+`wordlistinput = readtable("data/wordinput_1.csv", 'ReadVariableNames', false);`
+
+### `NTR_Orthogonalization_v16_randinput_SCRIPT.m`
+
+The script `NTR_Orthogonalization_v16_randinput_SCRIPT.m` generates distance matrices from a random list of words.
 
 ## Contribution and Support
 
