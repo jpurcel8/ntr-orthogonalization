@@ -38,17 +38,17 @@ This approach ensures that the word lists generated are both short and minimally
 
 ## Usage
 
-### `NTR_Orthogonalization_v16_listinput.m`
+### NTR_Orthogonalization_v16_listinput.m
 
 The primary script to run the library's functionality is `NTR_Orthogonalization_v16_listinput.m`. This script takes in a list of words and outputs distance matrices for those words. An example word list is provided in `data/wordinput_1.csv`.
 
-If you want to use your own list of words, create a .csv file with each of the words in a different cell, in all lowercase, in a signle row. Replace `data/wordinput_1.csv` with this file, or edit the `NTR_Orthogonalization_v16_listinput.m` script to accomodate the name and location of your file in the line reading
+If you want to use your own list of words, create a .csv file with each of the words in a different cell, in all lowercase, in a single row. Replace `data/wordinput_1.csv` with this file, or edit the `NTR_Orthogonalization_v16_listinput.m` script to accomodate the name and location of your file in the line reading
 
 `wordlistinput = readtable("data/wordinput_1.csv", 'ReadVariableNames', false);`
 
-### `NTR_Orthogonalization_v16_randinput_SCRIPT.m`
+### NTR_Orthogonalization_v16_random_iterations.m
 
-The script `NTR_Orthogonalization_v16_randinput_SCRIPT.m` generates distance matrices from a random list of words.
+The script `NTR_Orthogonalization_v16_random_iterations.m` generates distance matrices from a random list of words.
 
 ## Contribution and Support
 
